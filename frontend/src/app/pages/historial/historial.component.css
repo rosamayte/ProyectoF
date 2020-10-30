@@ -1,0 +1,7 @@
+input{
+  color:white;
+}
+
+textarea:focus, input:focus, input[type]:focus {
+  outline: 0 none;
+}
