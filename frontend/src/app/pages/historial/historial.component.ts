@@ -17,20 +17,26 @@ export class HistorialComponent implements OnInit {
     this.dataOriginal = [
       {
         fecha: new Date(),
-        nombre: "Lisa Smith",
+        nombre: "clavos",
         precio: 2,
         cantidad: 12,
         cv: "c"
       },
       {
         fecha: new Date(),
-        nombre: "misa Smith",
+        nombre: "martillo",
         precio: 2,
         cantidad: 12,
         cv: "c"
       }, {
         fecha: new Date(),
-        nombre: "naruto Smith",
+        nombre: "calamina",
+        precio: 2,
+        cantidad: 12,
+        cv: "c"
+      }, {
+        fecha: new Date(),
+        nombre: "alicate",
         precio: 2,
         cantidad: 12,
         cv: "c"

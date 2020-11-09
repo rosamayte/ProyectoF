@@ -5,3 +5,7 @@ input{
 textarea:focus, input:focus, input[type]:focus {
   outline: 0 none;
 }
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+margin-left: 40px;
+padding-left: 0px;
+}

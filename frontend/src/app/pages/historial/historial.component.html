@@ -1,9 +1,15 @@
-<div class="container ml-3 mt-5">
-  <div class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="busqueda" (ngModelChange)="searchByName()">
-    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+<div class="container mt-5 text-white">
+  <div class="row">
+    <div class="col-10">
+      <h1 class="font-weight-bold">Historial</h1>
+    </div>
+    <div class="col-2">
+      <div class="form-inline">
+        <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="busqueda" (ngModelChange)="searchByName()">
+      </div>
+    </div>
   </div>
-  <div class="row p-1">
+  <div class="row pl-4 pt-2">
     <div class="table-responsive-lx">
       <table class="table table-bordered table-striped">
         <thead class="thead-dark">
@@ -27,9 +33,36 @@
       </table>
     </div>
   </div>
-  <div class="row p-1">
-    <div class="col">
-      <button class="btn btn-dark">Add</button>
+  <div class="row mt-4">
+    <div class="col-10">
+      <h1 class="font-weight-bold">Total(mensual)</h1>
+    </div>
+    <div class="col-2">
+      <div class="form-inline">
+        <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+  </div>
+  <div class="row pl-4 pt-2">
+    <div class="table-responsive-lx">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Fecha(mes)</th>
+            <th scope="col">Invertido</th>
+            <th scope="col">Ganado</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataVisual">
+            <td><p class="border-0 bg-transparent" type="text"></p></td>
+            <td><p class="border-0 bg-transparent" type="number"></p></td>
+            <td><p class="border-0 bg-transparent" type="number"></p></td>
+            <td><p class="border-0 bg-transparent" type="number"></p></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
