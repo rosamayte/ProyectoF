@@ -1,1 +1,43 @@
-<p>registroc works!</p>
+<div class="container mt-5 text-white">
+  <div class="row mt-4">
+    <div class="col-10">
+      <h1 class="font-weight-bold">Registro de Compras</h1>
+    </div>
+    <div class="col-2">
+      <div class="form-inline">
+        <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+  </div>
+  <div class="row pl-4 pt-2">
+    <div class="table-responsive-lx">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Costo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Precio de Venta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Borrar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr *ngFor="let item of dataVisual"> -->
+          <tr>
+            <td><input class="border-0 bg-transparent" type="text"></td>
+            <td><input class="border-0 bg-transparent" type="number"></td>
+            <td><input class="border-0 bg-transparent" type="number"></td>
+            <td><input class="border-0 bg-transparent" type="number"></td>
+            <td><input class="border-0 bg-transparent" type="number"></td>
+            <td><input class="border-0 bg-transparent" type="text"></td>
+            <td><button class="btn btn-dark btn-sm"><i class="fas fa-pencil-alt"></i></button></td>
+            <td><button class="btn btn-dark btn-sm"><i class="fas fa-trash-alt"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

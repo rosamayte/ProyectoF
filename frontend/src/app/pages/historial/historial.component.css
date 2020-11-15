@@ -1,5 +1,6 @@
-input{
+p{
   color:white;
+  margin: 0px;
 }
 
 textarea:focus, input:focus, input[type]:focus {
