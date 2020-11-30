@@ -9,35 +9,29 @@
       </div>
     </div>
   </div>
-  <div class="row pl-4 pt-2">
-    <div class="table-responsive-lx">
-      <table class="table table-bordered table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Item</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Costo</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Precio de Venta</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Editar</th>
-            <th scope="col">Borrar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- <tr *ngFor="let item of dataVisual"> -->
-          <tr>
-            <td><input class="border-0 bg-transparent" type="text"></td>
-            <td><input class="border-0 bg-transparent" type="number"></td>
-            <td><input class="border-0 bg-transparent" type="number"></td>
-            <td><input class="border-0 bg-transparent" type="number"></td>
-            <td><input class="border-0 bg-transparent" type="number"></td>
-            <td><input class="border-0 bg-transparent" type="text"></td>
-            <td><button class="btn btn-dark btn-sm"><i class="fas fa-pencil-alt"></i></button></td>
-            <td><button class="btn btn-dark btn-sm"><i class="fas fa-trash-alt"></i></button></td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="py-2 px-4">
+  
+      <div class="form-row">
+      <div class="form-group col-md-8">
+        <label>Nombre</label>
+        <input type="text" class="form-control" [(ngModel)]="registro.nombre">
+      </div>
     </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Cantidad</label>
+          <input type="number" class="form-control" [(ngModel)]="registro.cantidad">
+        </div>
+        <div class="form-group col-md-4">
+          <label>Costo</label>
+          <input type="number" class="form-control" [(ngModel)]="registro.costo">
+        </div>
+        <div class="form-group col-md-4">
+          <label>Precio de Venta</label>
+          <input type="number" class="form-control" [(ngModel)]="registro.preciov">
+        </div>
+      </div>
+
   </div>
+  <button class="btn btn-dark" (click)="registrar()">Registrar</button>
 </div>

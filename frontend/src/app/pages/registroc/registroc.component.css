@@ -1,5 +1,11 @@
 input{
   color:white;
+  background-color: transparent;
+}
+
+input:focus{
+  color:white;
+  background-color: transparent;
 }
 
 textarea:focus, input:focus, input[type]:focus {

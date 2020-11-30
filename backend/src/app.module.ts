@@ -15,7 +15,10 @@ import { StockModule } from './stock/stock.module';
     RegistrocModule, 
     RegistrovModule, 
     StockModule,
-    MongooseModule.forRoot('mongodb://localhost/ferreteria')
+    MongooseModule.forRoot('mongodb://localhost/ferreteria',{
+      useCreateIndex:true,
+      useFindAndModify: false
+    })
   ],
   controllers: [AppController],
   providers: [AppService],
